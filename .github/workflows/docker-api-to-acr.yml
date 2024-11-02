@@ -2,12 +2,12 @@ name: docker img - ACR - K8 - RatingAPI
 # Microsoft learn -- rating API 
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
+  # pull_request:
+  #   branches:
+  #     - master
   workflow_dispatch:
 
 permissions: 
