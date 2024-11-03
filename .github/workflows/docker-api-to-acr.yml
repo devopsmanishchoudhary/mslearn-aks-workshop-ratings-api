@@ -39,6 +39,6 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          IMAGE_NAME=${{secrets.AZURE_REGISTRY_NAME}}.azurecr.io/ratingapi:${{github.sha}}
+          IMAGE_NAME=${{secrets.AZURE_REGISTRY_NAME}}.azurecr.io/ratingapi:v1
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
